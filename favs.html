@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background:url("https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.ie-wallpapers.com%2Fdata%2Fout%2F186%2F35942141-plain-background-images.jpg&f=1");
+background-size:1300px 660px;
+background-repeat:repeat;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+%for index, t in data.iterrows():   						
+	<h3> Full Text: </h3>{{ t['full_text']}}<br>
+	<h3>Retweetcount:</h3>{{ t['retweet_count']}}<br>
+	<h3> Favorite count:</h3>{{ t['favorite_count']}}<br>
+	<h3> User id:</h3> {{ t['id']}}<br>
+	<h3> Follower count:</h3>{{ t['user']['followers_count']}}<br>
+	<br>
+	<h3>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
+	<br>
+%end
